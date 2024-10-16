@@ -1,0 +1,25 @@
+[project]
+name = "linkup"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Magsen Chebini", email = "magsen.che@gmail.com"},
+]
+dependencies = [
+    "bs4>=0.0.2",
+    "linkup @ file:///${PROJECT_ROOT}/",
+    "requests>=2.32.3",
+    "streamlit>=1.39.0",
+    "langchain-huggingface>=0.1.0",
+    "faiss-cpu>=1.9.0",
+    "langchain>=0.3.3",
+    "langchain-community>=0.3.2",
+    "pytest>=8.3.3",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
